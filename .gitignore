@@ -1,33 +1,108 @@
-# Gradle files
+# === OS-SPECIFIC FILES ===
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Linux
+*~
+.nfs*
+
+# Windows
+Desktop.ini
+Thumbs.db
+ehthumbs.db
+$RECYCLE.BIN/
+
+# === IDEs and BUILD TOOLS ===
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# VS Code (optional if you use it)
+.vscode/
+
+# === GRADLE ===
 .gradle/
 build/
-
-# Local configuration file (sdk path, etc)
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+.gradle/
 local.properties
+# Avoid ignoring Gradle wrapper scripts
+!gradlew
+!gradlew.bat
 
-# Log/OS Files
+# === LOGS AND TEMP FILES ===
 *.log
+*.tmp
+*.temp
+*.swp
+*.swo
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
+# === APKs and ARTIFACTS ===
 *.apk
-output.json
+*.ap_
+*.aab
 
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
-
-# Keystore files
+# === Keystore Files ===
 *.jks
 *.keystore
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+# === NDK / CMake outputs ===
+.externalNativeBuild/
+cmake-build-debug/
+cmake-build-release/
+obj/
 
-# Android Profiling
-*.hprof
+# === Coverage Reports ===
+/coverage/
+
+# === Crashlytics / Firebase ===
+crashlytics-build.properties
+fabric.properties
+
+# === Android Patch Files ===
+*.rej
+*.orig
+
+# === Lint and Inspection Reports ===
+lint/reports/
+lint-results*.xml
+lint-results*.html
+
+# === Fastlane ===
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# === Testing and Benchmark Outputs ===
+test-results/
+test-output/
+benchmarkData/
+
+# === Local Configuration ===
+*.local
+
+# === Kotlin ===
+*.kotlin_module
+
+# === Misc ===
+.idea/
+captures/
+output.json
+
+# === Google Services (auto-generated) ===
+google-services.json
