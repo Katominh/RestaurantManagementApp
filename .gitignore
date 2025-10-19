@@ -30,7 +30,7 @@ $RECYCLE.BIN/
 *.iws
 out/
 
-# VS Code (optional if you use it)
+# VS Code
 .vscode/
 
 # === GRADLE ===
